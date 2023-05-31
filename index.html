@@ -13,15 +13,6 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-    />
-    <!-- Style CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Font-Awesome -->
     <link
@@ -31,50 +22,82 @@
   </head>
   <body>
     <div class="container" id="container">
-      <!-- Form Daftar Akun -->
-      <div class="form-container sign-up-container">
-        <form action="#">
-          <h2>Daftar Akun</h2>
-          <span>Silahkan isi data dibawah dengan valid </span>
-          <input type="text" placeholder="Nama Lengkap" />
-          <input type="email" placeholder="Email" />
-          <input type="tel" placeholder="Nomer" />
-          <input type="password" placeholder="Password" />
-          <a class="btn">Daftar</a>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="form-container sign-up-container">
+            <form action="#">
+              <h2>Daftar Akun</h2>
+              <span>Silahkan isi data dibawah dengan valid</span>
+              <input
+                type="text"
+                placeholder="Nama Lengkap"
+                class="form-control"
+              />
+              <input type="email" placeholder="Email" class="form-control" />
+              <input type="tel" placeholder="Nomer" class="form-control" />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-control"
+              />
+              <a class="btn btn-primary">Daftar</a>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+              </div>
+            </form>
           </div>
-        </form>
+
+          <div class="form-container sign-in-container">
+            <form action="#">
+              <h2>Login</h2>
+              <span>Silahkan isi data dibawah dengan valid</span>
+              <input type="email" placeholder="Email" class="form-control" />
+              <input
+                type="password"
+                placeholder="Password"
+                class="form-control"
+              />
+              <a class="text-start" href="#">Forgot your password?</a>
+              <a class="btn btn-primary" href="sidebar.html">Masuk</a>
+              <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-      <!-- End -->
-      <!-- Form Masuk Akun -->
-      <div class="form-container sign-in-container">
-        <form action="#">
-          <h2>Login</h2>
-          <span>Silahkan isi data dibawah dengan valid</span>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <a class="text-start" href="#">Forgot your password?</a>
-          <a class="btn" href="menu.html">Masuk</a>
-          <div class="social-container">
-            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          </div>
-        </form>
-      </div>
-      <!-- End -->
-      <div class="overlay-container">
-        <div class="overlay">
-          <div class="overlay-panel overlay-left">
-            <h2>Hello, Welcome To SIBESI !</h2>
-            <img src="assets/ic_sibesi.png" alt="Gambar sibesi" width="200" />
-            <a class="btn ghost mt-1" id="signIn">Masuk</a>
-          </div>
-          <div class="overlay-panel overlay-right">
-            <h2>Hello, Welcome To SIBESI !</h2>
-            <img src="assets/ic_sibesi.png" alt="Gambar sibesi" width="200" />
-            <a class="btn ghost mt-1" id="signUp">Daftar Akun</a>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h2>Hello, Welcome To SIBESI!</h2>
+                <img
+                  src="assets/ic_sibesi.png"
+                  alt="Gambar sibesi"
+                  width="200"
+                />
+                <a class="btn btn-outline-primary mt-1" id="signIn">Masuk</a>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h2>Hello, Welcome To SIBESI!</h2>
+                <img
+                  src="assets/ic_sibesi.png"
+                  alt="Gambar sibesi"
+                  width="200"
+                />
+                <a class="btn btn-outline-primary mt-1" id="signUp"
+                  >Daftar Akun</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
