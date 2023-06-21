@@ -8,6 +8,7 @@
   --body-font: "Nunito", sans-serif;
   --normal-font-size: 1rem;
   --z-fixed: 100;
+  --background: linear-gradient(to bottom, #cd0707, #ffffffdb);
 }
 body {
   /* background-image: url("../assets/Ic_bg.png"); */
@@ -21,3 +22,9 @@ body {
 .title {
   color: var(--white-color2);
 }
+
+.card-profile :hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+/* Button */
