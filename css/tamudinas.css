@@ -21,3 +21,11 @@ body {
 .title {
   color: var(--white-color2);
 }
+
+.card-profile :hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+a:hover {
+  text-decoration: none;
+}

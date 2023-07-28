@@ -1,0 +1,82 @@
+.frame {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 250px;
+  position: center;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  border-radius: 10px;
+}
+
+.btn {
+  height: 35px;
+  width: 35px;
+  border-radius: 3px;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+.btn:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, 0.3);
+}
+.nav-pills-custom .nav-link.active {
+  color: #45b649;
+  background: #fff;
+}
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+    content: "";
+    display: block;
+    border-top: 8px solid transparent;
+    border-left: 10px solid #fff;
+    border-bottom: 8px solid transparent;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+
+/*
+  *
+  * ==========================================
+  * FOR DEMO PURPOSE
+  * ==========================================
+  */
+body {
+  min-height: 100vh;
+  background: linear-gradient(to top, #d8d7d7, #ff1616);
+}
